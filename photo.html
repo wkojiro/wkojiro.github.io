@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The home page of Kojiro Wakabayashi">
     <meta name="keyword" content="portfolio,Kojiro Wakabayashi">
-    <title>This is HOME</title>
+    <title>This is Portfolio</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <!-- jQuery読み込み -->
@@ -25,6 +25,9 @@
   
   padding-top: 50px;
 
+}
+.clearfix:after {
+    clear: both;
 }
 
 .footer {
@@ -150,6 +153,41 @@
   text-shadow: 1px 1px 0px #000;
 }
 
+.portfolio-box{
+    padding:50px 0px;
+    display:block;
+    border-bottom:1px solid #e0e0e0;
+}
+
+
+.polaroid {
+display: block; /* ブロックレベル表示に */
+  width: 200px;
+  height: 250px;
+  margin: 0 auto;
+  background: white; /* 背景色を白 */
+  padding: 10px 10px 30px; /*上 左右 下のパディング */
+  -moz-box-shadow: 0 4px 10px #333; /* 影を落とす */
+  -webkit-box-shadow: 0 4px 10px #333;
+  box-shadow: 0 4px 10px #333;
+}
+.polaroid img {
+
+}
+/* TYPOGRAPHY */
+@font-face {
+	/* Font source: http://gorriti.com/2009/02/05/mi-aportacion-al-mundo-brutista/ */
+	font-family: 'GorriSans';
+	src: url('GorriSans.eot?') format('eot'), url('GorriSans.woff') format('woff'), url('GorriSans.ttf') format('truetype');
+}
+.polaroid figcaption {
+  font-family: GorriSans, arial, sans-serif;
+  display: block;
+  font-size: 16px;
+  line-height: 1;
+  text-align: center;
+}
+
 
 
 @media (max-width: 767px) {
@@ -179,7 +217,7 @@
         				<span class="icon-bar"></span>
         				<span class="icon-bar"></span>
         			</button>
-        			<a class="navbar-brand" href="index.html">
+	        <a class="navbar-brand" href="index.html">
         				KOJIRO WAKABAYASHI
         			</a>
         		</div>
@@ -196,11 +234,11 @@
     <div class="main-header" >
       <div class="container" >
          <div id="logo">
-          <img src="profile.png" alt="" />
-           <h2 class="body-font ">father, golfer, hockey player, traveler, manager, director  →Programmmer</h2>
+          
+          <!-- <h2 class="body-font ">Programmer, entrepreneur, writer, speaker, traveler</h2> -->
          </div>
-      <h1>Getting started</h1>
-        <p>An overview of Programming for dammies</p>
+      <h1>Photos</h1>
+        <p>Travel Photos </p>
       
       </div>   
     </div>
@@ -208,34 +246,17 @@
     <div class=container>
       <div class="page-header">
         <div class="row">
-          <div class="col-md-2" >
+          <div class="col-md-2">
           </div>
-          <div class="col-md-8" >
-            <div class="col-md-8" >
-                <h4>About me</h4>
-                <p>
-                 1974年東京都練馬区生まれ / 武蔵野市在住 / 三児の父（全員男）。
-                 私が大学生の時にインターネットというものが世の中に知られるようになりました。当時（1995年頃）は電話回線。モデムを使いモザイクというネットスケープ社のブラウザでネットにアクセスしていました。
-                 GoogleもFacebookもiPhoneもありませんでした。
-                 その頃にシリコンバレーで活躍するネットベンチャーに魅力を感じ、自分でもHTMLを独学しました。それ以来、Web業界に携わってきましたが、エンジニアではなくマーケティングやマネージメントがメインでした。
-                 父になり、いつか子供がプログラミングができるようになればよいな、と思うようになり、教えられるようにプログラミングを自分でもできるようになりたい、と思うようになりました。
-                 未だにシリコンバレーに憧れていて、いつかはアメリカに移住したいなぁと思っています。
+            <div class="col-md-8">
 
-                </p>
-            </div>
-            <div class="col-md-4" >
-                <h4>Contact</h4>
-                <p>
-                      <a href="https://github.com/wkojiro" target="_blank" class="cleafix">
-                         <h5><span class="octicon octicon-mark-github"></span> Github</h5>
-                      </a>
-                      <a href="mailto:wkojiro22@gmail.com" target="_blank" class="inbox">
-                       <h5><span class="octicon octicon-mail"></span>
-                            <span class="">E-mail</span></h5>
-                       </a>
-                </p>
-              
-            </div>
+     <!-- HTML ファイル -->
+<figure class="polaroid">
+  <img src="santa.png" alt="本物のサンタさん">
+  <figcaption>Wait a minute!</figcaption>
+</figure>
+
+
            </div>
            <div class="col-md-2" >
            </div>
